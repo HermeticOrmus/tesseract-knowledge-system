@@ -1,0 +1,133 @@
+{
+  "name": "tesseract-knowledge-system",
+  "version": "1.0.0",
+  "description": "Self-updating documentation and best practices system for Claude Code. Stay ahead of the curve automatically - fetches latest updates, analyzes them, and guides you through implementation.",
+  "author": {
+    "name": "Ormus",
+    "email": "ormus@hermetic.dev",
+    "url": "https://github.com/ormus"
+  },
+  "license": "MIT",
+  "keywords": [
+    "knowledge-management",
+    "documentation",
+    "best-practices",
+    "auto-update",
+    "learning",
+    "claude-code",
+    "productivity",
+    "automation",
+    "knowledge-base"
+  ],
+  "homepage": "https://github.com/ormus/tesseract-knowledge-system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ormus/tesseract-knowledge-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ormus/tesseract-knowledge-system/issues"
+  },
+  "main": "plugin.json",
+  "files": [
+    "commands/**/*.md",
+    "scripts/**/*.sh",
+    "docs-cache/**",
+    "best-practices/**",
+    "applied/**",
+    "updates/**",
+    "examples/**",
+    "README.md",
+    "QUICK_START.md",
+    "tesseract.config.json",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "claude": {
+    "minVersion": "1.0.0",
+    "maxVersion": "2.0.0"
+  },
+  "dependencies": {},
+  "categories": [
+    "knowledge-management",
+    "documentation",
+    "productivity",
+    "automation"
+  ],
+  "tags": [
+    "knowledge-base",
+    "auto-update",
+    "documentation",
+    "best-practices",
+    "learning",
+    "claude-code-updates",
+    "mcp-servers",
+    "continuous-learning"
+  ],
+  "compatibility": {
+    "platforms": ["win32", "darwin", "linux"],
+    "mcpServers": [],
+    "requires": {
+      "curl": "For fetching updates",
+      "bash": "For running automation scripts"
+    }
+  },
+  "configuration": {
+    "defaults": {
+      "autoFetch": true,
+      "fetchFrequency": "weekly",
+      "minRelevance": 0.7,
+      "autoApply": false,
+      "requireApproval": true
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "autoFetch": {
+          "type": "boolean",
+          "description": "Automatically fetch updates weekly",
+          "default": true
+        },
+        "fetchFrequency": {
+          "type": "string",
+          "enum": ["daily", "weekly", "monthly"],
+          "description": "How often to check for updates",
+          "default": "weekly"
+        },
+        "minRelevance": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Minimum relevance score for updates (0-1)",
+          "default": 0.7
+        },
+        "autoApply": {
+          "type": "boolean",
+          "description": "Automatically apply low-risk improvements",
+          "default": false
+        },
+        "requireApproval": {
+          "type": "boolean",
+          "description": "Require approval before applying changes",
+          "default": true
+        }
+      }
+    }
+  },
+  "activation": {
+    "onInstall": "echo '✅ Tesseract Knowledge System installed! Run /tesseract-sync to fetch the latest Claude Code updates and best practices.'",
+    "onActivate": "echo '✅ Tesseract Knowledge System activated! Stay ahead of the curve with auto-updating knowledge.'",
+    "onDeactivate": "echo '⏸️ Tesseract Knowledge System deactivated.'"
+  },
+  "stats": {
+    "commands": 3,
+    "automationScripts": 1,
+    "cachedDocs": "547KB+",
+    "features": [
+      "Auto-fetch updates",
+      "Relevance filtering",
+      "Guided implementation",
+      "Adoption tracking",
+      "Best practices curation"
+    ]
+  }
+}

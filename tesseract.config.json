@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "lastSync": null,
+  "autoFetch": true,
+  "fetchFrequency": "weekly",
+
+  "sources": {
+    "officialDocs": {
+      "enabled": true,
+      "url": "https://docs.claude.com/en/docs/claude-code/",
+      "priority": "high"
+    },
+    "github": {
+      "enabled": true,
+      "repos": [
+        "anthropics/claude-code",
+        "punkpeye/awesome-mcp-servers",
+        "modelcontextprotocol/servers"
+      ],
+      "priority": "high"
+    },
+    "community": {
+      "enabled": true,
+      "forums": ["reddit.com/r/ClaudeAI", "discord"],
+      "priority": "medium"
+    },
+    "blogs": {
+      "enabled": false,
+      "priority": "low"
+    }
+  },
+
+  "filters": {
+    "minRelevance": 0.7,
+    "categories": [
+      "features",
+      "best-practices",
+      "integrations",
+      "mcp-servers",
+      "agents",
+      "performance",
+      "security"
+    ],
+    "excludeTopics": [
+      "beginner-tutorials",
+      "marketing"
+    ]
+  },
+
+  "automation": {
+    "autoApply": false,
+    "requireApproval": true,
+    "autoBackup": true,
+    "safetyChecks": true
+  },
+
+  "notifications": {
+    "notifyOnUpdates": true,
+    "notifyOnBreakingChanges": true,
+    "notifyOnNewFeatures": true,
+    "summaryFrequency": "weekly"
+  },
+
+  "strategy": "conservative",
+
+  "userPreferences": {
+    "primaryWorkflow": ["rapid-development", "multi-agent", "automation"],
+    "focusAreas": ["agents", "mcp-servers", "custom-commands"],
+    "experienceLevel": "advanced"
+  },
+
+  "metrics": {
+    "trackAdoption": true,
+    "trackImpact": true,
+    "trackTimeSpent": false
+  }
+}
