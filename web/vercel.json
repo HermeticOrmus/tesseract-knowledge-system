@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "env": {
+    "NEXT_PUBLIC_APP_URL": "@next-public-app-url",
+    "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY": "@next-public-clerk-publishable-key",
+    "CLERK_SECRET_KEY": "@clerk-secret-key",
+    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "@next-public-stripe-publishable-key",
+    "STRIPE_SECRET_KEY": "@stripe-secret-key",
+    "STRIPE_WEBHOOK_SECRET": "@stripe-webhook-secret"
+  }
+}
