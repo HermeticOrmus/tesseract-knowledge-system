@@ -1,5 +1,21 @@
-# Claude Tesseract 🔮
+<p align="center">
+  <img src="https://ormus.solutions/mascot/chain_braces_to_swan.gif" alt="Claude Tesseract 🔮" width="128" style="image-rendering: pixelated;" />
+</p>
 
+<h1 align="center">Claude Tesseract 🔮</h1>
+
+<p align="center">
+  <em>Self-updating knowledge system for Claude Code — auto-distills patterns from development sessions</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/HermeticOrmus/tesseract-knowledge-system/stargazers"><img src="https://img.shields.io/github/stars/HermeticOrmus/tesseract-knowledge-system?style=flat-square&color=aa8142" alt="Stars" /></a>
+  <a href="https://github.com/HermeticOrmus/tesseract-knowledge-system/blob/main/LICENSE"><img src="https://img.shields.io/github/license/HermeticOrmus/tesseract-knowledge-system?style=flat-square&color=aa8142" alt="License" /></a>
+  <a href="https://github.com/HermeticOrmus/tesseract-knowledge-system/commits"><img src="https://img.shields.io/github/last-commit/HermeticOrmus/tesseract-knowledge-system?style=flat-square&color=aa8142" alt="Last Commit" /></a>
+  <img src="https://img.shields.io/badge/Claude_Code-aa8142?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code" />
+</p>
+
+---
 **A self-updating knowledge system for Claude Code mastery.**
 
 The Tesseract automatically downloads, curates, and applies the latest Claude Code news, best practices, and innovations to your setup.
